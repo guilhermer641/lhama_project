@@ -1,0 +1,16 @@
+version: "3.1"
+rules:
+
+# Regras para fallback
+- rule: Handle fallback
+  steps:
+  - intent: nlu_fallback  # Use sempre `nlu_fallback` para capturar falhas de compreensão
+  - action: action_log_fallback  # A ação personalizada de fallback
+  
+
+- rule: Capturar empresa corretamente
+  steps:
+  - intent: informar_empresa
+  - slot_was_set:
+    - slot_empresa: ""
+  - action: utter_suporte_direcionamento

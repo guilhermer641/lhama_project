@@ -1,0 +1,258 @@
+version: "3.1"
+
+intents:
+  - saudacao
+  - saudacao_dia
+  - saudacao_tarde
+  - saudacao_noite
+  - informar_nome
+  - informar_empresa
+  - suporte
+  - comercial
+  - financeiro
+  - afirmacao
+  - negacao
+  - fallback
+  
+entities:
+  - nome  # Definindo a entidade 'nome'
+  - empresa # Defini a entidade 'empresa'
+
+slots:
+  slot_nome:
+    type: text
+    influence_conversation: false
+    mappings:
+    - type: from_entity
+      entity: nome
+    - type: from_text  # Fallback para capturar o valor diretamente do texto
+    
+  slot_empresa:
+    type: text
+    influence_conversation: true
+    mappings:
+    - type: from_entity
+      entity: empresa
+    - type: from_text  # Fallback para capturar o valor diretamente do texto
+               
+responses:
+    
+ utter_saudacao:
+    - text: "Olá! Bem-vindo! Em que posso te ajudar hoje? Sugiro que me diga se precisa de suporte, ajuda comercial ou financeira."
+    - text: "Oi! Em que posso te ajudar hoje? Você pode contar comigo para suporte, comercial ou financeiro."
+    - text: "Olá, tudo certo? Como posso te auxiliar? Precisa de suporte, ou algo relacionado a comercial ou financeiro?"
+    - text: "Oi! Como posso ser útil para você? Posso ajudar com suporte, comercial ou financeiro."
+    - text: "Olá, seja bem-vindo! Em que posso te ajudar hoje? Que tal começar dizendo se precisa de suporte, comercial ou financeiro?"
+    - text: "Oi, tudo bem? Precisa de suporte, ou talvez ajuda com algo comercial ou financeiro?"
+    - text: "Olá, espero que esteja bem! O que posso fazer para ajudá-lo? Talvez suporte, comercial ou financeiro?"
+    - text: "Oi! Diga-me como posso ajudar você! Estou à disposição para suporte, questões comerciais ou financeiras."
+    - text: "Olá, tudo tranquilo? Como posso te atender hoje? Precisa de suporte, ou de algo na área comercial ou financeira?"
+    - text: "Oi! Estou aqui para ajudar, o que você precisa? Precisa de suporte, comercial ou financeiro?"
+    - text: "Olá! Como posso te ajudar hoje? Talvez suporte, ou algo relacionado a comercial ou financeiro?"
+    - text: "Oi! Qual é a sua necessidade hoje? Pode ser suporte, algo comercial ou financeiro."
+    - text: "Olá, espero que esteja bem! Posso te ajudar com suporte, comercial ou financeiro, como prefere seguir?"
+    - text: "Oi! Estou à disposição, como posso ajudar? Sugiro que me diga se precisa de suporte, comercial ou financeiro."
+    - text: "Olá! Como posso facilitar seu dia? Precisa de suporte, ou algo comercial ou financeiro?"
+    - text: "Oi! O que posso fazer por você hoje? Posso ajudar com suporte, questões comerciais ou financeiras."
+    - text: "Olá, tudo em ordem? Como posso ser útil? Estou aqui para suporte, comercial ou financeiro."
+    - text: "Oi! Pronto para ajudar, o que precisa? Suporte, comercial ou financeiro?"
+    - text: "Olá! Como posso contribuir para sua experiência? Suporte, comercial ou financeiro são algumas das opções."
+    - text: "Oi! Estou aqui para ajudar com o que você precisar! Talvez suporte, algo comercial ou financeiro?"
+    
+ utter_saudacao_dia:
+   - text: "Oi, bom dia! Seja bem-vindo! Como posso ajudá-lo hoje? Talvez precise de suporte, algo comercial ou financeiro?"
+   - text: "Bom dia! Seja bem-vindo! Posso ajudar com suporte, comercial ou financeiro. Qual dessas opções seria melhor para você?"
+   - text: "Olá, bom dia! Como posso ser útil hoje? Estou disponível para suporte, questões comerciais ou financeiras."
+   - text: "Oi, bom dia! Bem-vindo! Em que posso te ajudar? Precisa de suporte, assistência comercial ou financeira?"
+   - text: "Bom dia! Que bom vê-lo aqui! Como posso ajudá-lo hoje? Posso oferecer suporte, ajuda com comercial ou financeiro."
+   - text: "Oi, bom dia! Espero que esteja bem! Precisa de suporte, ou talvez algo relacionado ao comercial ou financeiro?"
+   - text: "Bom dia! Seja bem-vindo! Posso te ajudar com suporte, comercial ou financeiro. Como prefere seguir?"
+   - text: "Olá, bom dia! Estou à disposição para ajudar! Você precisa de suporte, assistência comercial ou financeira?"
+   - text: "Oi, bom dia! Como posso te ajudar? Precisa de suporte, assistência comercial ou financeira?"
+   - text: "Bom dia! Como posso te auxiliar hoje? Posso te ajudar com suporte, algo comercial ou financeiro."
+   - text: "Oi, bom dia! Bem-vindo! Estou à disposição para ajudar com suporte, comercial ou financeiro."
+   - text: "Bom dia! Em que posso te ajudar hoje? Suporte, comercial ou financeiro?"
+   - text: "Oi, bom dia! Seja bem-vindo! Como posso ajudar? Precisa de suporte, algo comercial ou financeiro?"
+   - text: "Bom dia! Tudo bem? Como posso te ajudar? Talvez com suporte, ou questões comerciais ou financeiras?"
+   - text: "Olá, bom dia! Seja bem-vindo! Precisa de suporte, comercial ou financeiro hoje?"
+   - text: "Oi, bom dia! Posso ajudar com suporte, comercial ou financeiro. Qual dessas áreas posso te ajudar?"
+   - text: "Bom dia! Tudo certo? Estou à disposição para suporte, comercial ou financeiro. Como posso ajudar?"
+   - text: "Oi, bom dia! Como posso ajudar? Precisa de suporte, assistência comercial ou algo financeiro?"
+   - text: "Bom dia! Como posso facilitar seu dia hoje? Precisa de suporte, assistência comercial ou financeira?"
+   - text: "Oi, bom dia! Tudo bem? Como posso te ajudar? Precisa de suporte, algo comercial ou financeiro?"
+
+ utter_saudacao_tarde:
+   - text: "Oi, boa tarde! Seja bem-vindo! Como posso ajudá-lo hoje? Talvez precise de suporte, algo comercial ou financeiro?"
+   - text: "Boa tarde! Seja bem-vindo! Posso ajudar com suporte, comercial ou financeiro. Qual dessas opções seria melhor para você?"
+   - text: "Olá, boa tarde! Como posso ser útil hoje? Estou disponível para suporte, questões comerciais ou financeiras."
+   - text: "Oi, boa tarde! Bem-vindo! Em que posso te ajudar? Precisa de suporte, assistência comercial ou financeira?"
+   - text: "Boa tarde! Que bom vê-lo aqui! Como posso ajudá-lo hoje? Posso oferecer suporte, ajuda com comercial ou financeiro."
+   - text: "Oi, boa tarde! Espero que esteja bem! Precisa de suporte, ou talvez algo relacionado ao comercial ou financeiro?"
+   - text: "Boa tarde! Seja bem-vindo! Posso te ajudar com suporte, comercial ou financeiro. Como prefere seguir?"
+   - text: "Olá, boa tarde! Estou à disposição para ajudar! Você precisa de suporte, assistência comercial ou financeira?"
+   - text: "Oi, boa tarde! Como posso te ajudar? Precisa de suporte, assistência comercial ou financeira?"
+   - text: "Boa tarde! Como posso te auxiliar hoje? Posso te ajudar com suporte, algo comercial ou financeiro."
+   - text: "Oi, boa tarde! Bem-vindo! Estou à disposição para ajudar com suporte, comercial ou financeiro."
+   - text: "Boa tarde! Em que posso te ajudar hoje? Suporte, comercial ou financeiro?"
+   - text: "Oi, boa tarde! Seja bem-vindo! Como posso ajudar? Precisa de suporte, algo comercial ou financeiro?"
+   - text: "Boa tarde! Tudo bem? Como posso te ajudar? Talvez com suporte, ou questões comerciais ou financeiras?"
+   - text: "Olá, boa tarde! Seja bem-vindo! Precisa de suporte, comercial ou financeiro hoje?"
+   - text: "Oi, boa tarde! Posso ajudar com suporte, comercial ou financeiro. Qual dessas áreas posso te ajudar?"
+   - text: "Boa tarde! Tudo certo? Estou à disposição para suporte, comercial ou financeiro. Como posso ajudar?"
+   - text: "Oi, boa tarde! Como posso ajudar? Precisa de suporte, assistência comercial ou algo financeiro?"
+   - text: "Boa tarde! Como posso facilitar seu dia hoje? Precisa de suporte, assistência comercial ou financeira?"
+   - text: "Oi, boa tarde! Tudo bem? Como posso te ajudar? Precisa de suporte, algo comercial ou financeiro?"
+
+ utter_saudacao_noite:
+   - text: "Oi, boa noite! Seja bem-vindo! Como posso ajudá-lo hoje? Talvez precise de suporte, algo comercial ou financeiro?"
+   - text: "Boa noite! Seja bem-vindo! Posso ajudar com suporte, comercial ou financeiro. Qual dessas opções seria melhor para você?"
+   - text: "Olá, boa noite! Como posso ser útil hoje? Estou disponível para suporte, questões comerciais ou financeiras."
+   - text: "Oi, boa noite! Bem-vindo! Em que posso te ajudar? Precisa de suporte, assistência comercial ou financeira?"
+   - text: "Boa noite! Que bom vê-lo aqui! Como posso ajudá-lo hoje? Posso oferecer suporte, ajuda com comercial ou financeiro."
+   - text: "Oi, boa noite! Espero que esteja bem! Precisa de suporte, ou talvez algo relacionado ao comercial ou financeiro?"
+   - text: "Boa noite! Seja bem-vindo! Posso te ajudar com suporte, comercial ou financeiro. Como prefere seguir?"
+   - text: "Olá, boa noite! Estou à disposição para ajudar! Você precisa de suporte, assistência comercial ou financeira?"
+   - text: "Oi, boa noite! Como posso te ajudar? Precisa de suporte, assistência comercial ou financeira?"
+   - text: "Boa noite! Como posso te auxiliar hoje? Posso te ajudar com suporte, algo comercial ou financeiro."
+   - text: "Oi, boa noite! Bem-vindo! Estou à disposição para ajudar com suporte, comercial ou financeiro."
+   - text: "Boa noite! Em que posso te ajudar hoje? Suporte, comercial ou financeiro?"
+   - text: "Oi, boa noite! Seja bem-vindo! Como posso ajudar? Precisa de suporte, algo comercial ou financeiro?"
+   - text: "Boa noite! Tudo bem? Como posso te ajudar? Talvez com suporte, ou questões comerciais ou financeiras?"
+   - text: "Olá, boa noite! Seja bem-vindo! Precisa de suporte, comercial ou financeiro hoje?"
+   - text: "Oi, boa noite! Posso ajudar com suporte, comercial ou financeiro. Qual dessas áreas posso te ajudar?"
+   - text: "Boa noite! Tudo certo? Estou à disposição para suporte, comercial ou financeiro. Como posso ajudar?"
+   - text: "Oi, boa noite! Como posso ajudar? Precisa de suporte, assistência comercial ou algo financeiro?"
+   - text: "Boa noite! Como posso facilitar seu dia hoje? Precisa de suporte, assistência comercial ou financeira?"
+   - text: "Oi, boa noite! Tudo bem? Como posso te ajudar? Precisa de suporte, algo comercial ou financeiro?"
+
+ utter_suporte_captura_nome:
+    - text: "Para prosseguirmos, qual seu nome?"
+    - text: "Para prosseguirmos, qual é o seu nome, por favor?"
+    - text: "Antes de continuarmos, poderia me dizer seu nome?"
+    - text: "Para que eu possa te ajudar melhor, qual é o seu nome?"
+    - text: "Que nome você gostaria de compartilhar comigo?"
+    - text: "Só um momento, qual é o seu nome mesmo?"
+    - text: "Para me ajudar a te atender, qual é o seu nome?"
+    - text: "Estou aqui para ajudar! Como você se chama?"
+    - text: "Posso saber seu nome para continuar nossa conversa?"
+    - text: "Qual é o seu nome? Assim posso me referir a você corretamente."
+    - text: "Para personalizar nosso atendimento, qual é o seu nome?"
+    - text: "Me diga, qual é o seu nome? Assim fica mais fácil conversar!"
+    - text: "Para seguir em frente, qual é o nome que você gostaria de usar?"
+    - text: "Como você prefere ser chamado durante nossa conversa?"
+    - text: "Antes de começarmos, qual é o seu nome, por gentileza?"
+    - text: "Para que eu possa te atender da melhor forma, qual é o seu nome?"
+ 
+ utter_captura_empresa:
+   - text: "Ótimo, {slot_nome}! E de qual empresa você fala?"
+   - text: "Perfeito, {slot_nome}! E qual é o nome da empresa que você representa?"
+   - text: "Excelente, {slot_nome}! Pode me contar de qual empresa você está falando?"
+   - text: "Ótimo, {slot_nome}! Qual o nome da sua empresa?"
+   - text: "Certo, {slot_nome}! E qual é o nome da empresa que você representa?"
+   - text: "Ah sim, {slot_nome}! Agora, gostaria de saber de qual empresa você fala?"
+   - text: "Show, {slot_nome}! Você pode me informar o nome da empresa?"
+   - text: "Certo, {slot_nome}! Qual é a empresa que você gostaria de mencionar?"
+   - text: "Ótimo, {slot_nome}! Para seguir, qual é o nome da empresa?"
+   - text: "Entendi, {slot_nome}! De qual empresa você está falando?"
+   - text: "Perfeito, {slot_nome}! Agora, de qual empresa podemos falar?"
+   
+ utter_suporte_direcionamento:
+   - text: "Ótimo, obrigado pelas informações, agora que sabemos que você fala da {slot_empresa}, estamos lhe encaminhando para o atendimento com o Suporte com prioridade."
+   - text: "Perfeito, agradecemos por nos informar sobre a {slot_empresa}. Vamos direcioná-lo para o Suporte agora mesmo."
+   - text: "Muito bem, agora que sabemos que você representa a {slot_empresa}, estamos encaminhando seu atendimento para o Suporte com urgência."
+   - text: "Certo, obrigado pelas informações sobre a {slot_empresa}! Você será direcionado ao Suporte a partir de agora."
+   - text: "Ótimo, como você fala da {slot_empresa}, vamos garantir que o Suporte receba sua solicitação imediatamente."
+   - text: "Perfeito, obrigado por compartilhar que você representa a {slot_empresa}. Estaremos encaminhando seu caso para o Suporte agora mesmo."
+   - text: "Entendi, agradecemos as informações. Sabendo que você representa a {slot_empresa}, vamos encaminhá-lo para o Suporte imediatamente."
+   - text: "Obrigado, agora que sabemos que você está falando em nome da {slot_empresa}, vamos direcionar você para o Suporte com prioridade."
+   - text: "Certo, sabendo que você é da {slot_empresa}, estamos prontos para encaminhar sua solicitação para o Suporte."
+   - text: "Ah sim, estamos prontos para direcioná-lo ao Suporte sabendo que você fala da {slot_empresa}. Obrigado pelas informações!"
+
+ utter_suporte_sucesso:
+   - text: "Transferido com sucesso!!"
+ 
+ utter_comercial_captura_nome:
+   - text: "Excelente, será um prazer fazermos parte do sucesso da sua empresa! Qual o seu nome?"
+   - text: "Excelente, será um prazer fazermos parte do sucesso da sua empresa! Poderia me informar o seu nome?"
+   - text: "Ótimo! Estamos animados para colaborar com sua empresa. Para começar, qual é o seu nome?"
+   - text: "Perfeito, será um prazer ajudá-lo a alcançar o sucesso! Como posso chamá-lo?"
+   - text: "Maravilha, estamos aqui para impulsionar sua empresa! Qual é o seu nome, por favor?"
+   - text: "Estamos felizes em poder colaborar com o crescimento da sua empresa! Poderia me dizer seu nome?"
+   - text: "Excelente escolha! Qual é o seu nome para darmos início à nossa conversa?"
+   - text: "Ótimo, estamos ansiosos para ajudar sua empresa a crescer! Como devo chamá-lo?"
+   - text: "Perfeito! Será um prazer trabalhar com você. Qual o seu nome, por gentileza?"
+   - text: "Fantástico! Estamos prontos para ajudar. Poderia me dizer seu nome para começarmos?"
+   - text: "Excelente! Estamos ansiosos para contribuir com o sucesso da sua empresa. Como você se chama?"
+
+ utter_comercial_direcionamento:
+   - text: "Ok, obrigado pela informação! Agora que sabemos que se refere à empresa {slot_empresa}, estamos direcionando você para nossa equipe comercial 🫡"
+   - text: "Perfeito, obrigado! Como você mencionou a empresa {slot_empresa}, estamos encaminhando você para nossa equipe comercial 🫡"
+   - text: "Certo, muito obrigado! Agora que temos as informações da {slot_empresa}, você será direcionado para o nosso time comercial 🫡"
+   - text: "Obrigado! Sabendo que se trata da empresa {slot_empresa}, estamos encaminhando sua solicitação para nossa equipe comercial 🫡"
+   - text: "Ótimo, obrigado pelas informações sobre a {slot_empresa}! Vamos conectar você com nossa equipe comercial 🫡"
+   - text: "Informação recebida! Como você representa a {slot_empresa}, estamos direcionando você para o nosso time comercial 🫡"
+   - text: "Perfeito, obrigado! Agora que sabemos que se refere à {slot_empresa}, estamos encaminhando sua solicitação ao time comercial 🫡"
+   - text: "Obrigado pela informação sobre a {slot_empresa}! Nossa equipe comercial já está preparada para te atender 🫡"
+   - text: "Tudo certo! Agora que temos as informações da {slot_empresa}, vamos te direcionar para o setor comercial 🫡"
+   - text: "Perfeito! Sabendo que se trata da empresa {slot_empresa}, estamos enviando sua solicitação ao time comercial 🫡"
+
+ utter_comercial_sucesso:
+   - text: "Transferido com sucesso!!"
+   
+ utter_financeiro_captura_nome:
+   - text: "Certo, iremos auxiliá-lo com financeiro! Para começar, qual o seu nome?"
+   - text: "Perfeito! Vamos te ajudar com o setor financeiro. Qual é o seu nome, por favor?"
+   - text: "Ótimo, vamos te auxiliar com financeiro! Pode me informar o seu nome para continuarmos?"
+   - text: "Tudo bem, estou aqui para ajudar com financeiro! Poderia me dizer seu nome para começarmos?"
+   - text: "Vamos começar com a assistência financeira! Qual o seu nome?"
+   - text: "Perfeito, vamos iniciar sua solicitação no financeiro! Qual é o seu nome?"
+   - text: "Certo, vamos te ajudar com o financeiro! Primeiro, qual o seu nome?"
+   - text: "Maravilha! Vamos auxiliar com financeiro. Qual o seu nome, por gentileza?"
+   - text: "Ótimo! Estamos prontos para te ajudar no setor financeiro. Para começar, qual o seu nome?"
+   - text: "Vamos iniciar sua solicitação no financeiro! Poderia me dizer seu nome, por favor?"
+
+ utter_financeiro_direcionamento:
+   - text: "Ok, obrigado pela informação! Agora que sabemos que se refere à empresa {slot_empresa}, estamos direcionando você para o setor financeiro! 🫡"
+   - text: "Perfeito, obrigado! Como você mencionou a {slot_empresa}, estamos encaminhando sua solicitação para o financeiro! 🫡"
+   - text: "Certo, muito obrigado! Agora que temos as informações da {slot_empresa}, você será direcionado ao nosso time financeiro! 🫡"
+   - text: "Obrigado! Sabendo que se trata da empresa {slot_empresa}, estamos encaminhando você para o setor financeiro! 🫡"
+   - text: "Ótimo, obrigado pelas informações sobre a {slot_empresa}! Vamos conectar você com nossa equipe financeira! 🫡"
+   - text: "Informação recebida! Como você representa a {slot_empresa}, estamos direcionando sua solicitação ao nosso time financeiro! 🫡"
+   - text: "Perfeito, obrigado! Agora que sabemos que se refere à {slot_empresa}, estamos encaminhando você para o setor financeiro! 🫡"
+   - text: "Obrigado pela informação sobre a {slot_empresa}! Nossa equipe financeira já está preparada para te atender! 🫡"
+   - text: "Tudo certo! Agora que temos as informações da {slot_empresa}, vamos te direcionar para o setor financeiro! 🫡"
+   - text: "Perfeito! Sabendo que se trata da empresa {slot_empresa}, estamos enviando sua solicitação para o time financeiro! 🫡"
+    
+ utter_financeiro_sucesso:
+   - text: "Transferido com sucesso!!"
+
+ utter_afirmacao:
+    - text: "Certo."
+    - text: "Entendido!"
+    - text: "Perfeito!."
+    - text: "Ok"
+    - text: "Sim"
+    
+ utter_negacao:
+    - text: "Certo, ainda estou aprendenendo, vamos começar do início, informe por gentileza do que precisa?" 
+    - text: "Entendi, obrigado pela sua paciência! Vamos começar do zero. Do que você precisa?"
+    - text: "Ok, ainda estou aprendendo. Poderia me dizer novamente como posso ajudar?"
+    - text: "Obrigado por me avisar! Vamos recomeçar. Qual é a sua dúvida?"
+    - text: "Sem problemas! Estou aqui para aprender com você. O que você precisa?"
+    - text: "Certo, vou tentar ajudar da melhor forma. Pode me dizer novamente o que precisa?"    
+
+ utter_fallback:
+    - text: "Desculpe, não entendi. Estou aqui para lhe ajudar e posso lhe direcionar para o Suporte, Comercial ou Financeiro. Como posso ajudá-lo?"
+    - text: "Peço desculpas, mas não consegui captar sua mensagem. Estou aqui para ajudar! Posso direcioná-lo para Suporte, Comercial ou Financeiro."
+    - text: "Hmmm, não consegui entender. Posso ajudar você com Suporte, Comercial ou Financeiro. Qual dessas opções você prefere?"
+    - text: "Desculpe, não compreendi. Estou aqui para ajudar! Você gostaria de falar com Suporte, Comercial ou Financeiro?"
+    - text: "Parece que não entendi o que você disse. Estou à disposição para ajudar! Posso direcioná-lo para Suporte, Comercial ou Financeiro."
+
+actions:
+  - action_log_fallback
+  - action_handle_support_triagem
+  - action_end_conversation
+
+session_config:
+  session_expiration_time: 60  # value in minutes
+  carry_over_slots_to_new_session: true

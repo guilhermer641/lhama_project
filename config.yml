@@ -1,0 +1,52 @@
+# The config recipe.
+# https://rasa.com/docs/rasa/model-configuration/
+recipe: default.v1
+
+# The assistant project unique identifier
+assistant_id: 20241004-230218-bordeaux-prop
+
+# Configuration for Rasa NLU.
+# https://rasa.com/docs/rasa/nlu/components/
+language: "pt"
+
+# Configuração do pipeline de NLU (NLU pipeline).
+pipeline:
+  - name: WhitespaceTokenizer
+  - name: RegexFeaturizer
+  - name: LexicalSyntacticFeaturizer
+  - name: CountVectorsFeaturizer
+  - name: CountVectorsFeaturizer
+    analyzer: char_wb
+    min_ngram: 1
+    max_ngram: 4
+  - name: DIETClassifier
+    epochs: 100
+    constrain_similarities: true
+  - name: EntitySynonymMapper
+  - name: ResponseSelector
+    epochs: 100
+    constrain_similarities: true
+  - name: FallbackClassifier  # Classificador de fallback atualizado
+    threshold: 0.4  # Threshold do NLU para fallback
+    ambiguity_threshold: 0.1  # Se houver múltiplas intents com confiança parecida, fallback
+
+# Configuração das políticas (Core policies).
+policies:
+  - name: MemoizationPolicy
+  - name: RulePolicy
+    core_fallback_threshold: 0.3  # Threshold de fallback de diálogo
+    core_fallback_action_name: "action_log_fallback"  # Ação de fallback personalizada
+    enable_fallback_prediction: True  # Habilita fallback baseado em regras
+  - name: TEDPolicy
+    max_history: 5
+    epochs: 100
+    constrain_similarities: true
+  - name: UnexpecTEDIntentPolicy
+    max_history: 5
+    epochs: 100
+
+# Configuração de logs
+logging:
+  level: DEBUG  # Define o nível de detalhes dos logs. Pode ser DEBUG, INFO, WARNING, etc.
+  log_file: "logs/rasa_logs.log"  # Local onde o log será salvo
+

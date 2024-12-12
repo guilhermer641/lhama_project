@@ -1,0 +1,104 @@
+version: "3.1"
+
+rules:
+
+# Regras de saudação
+- rule: Responder saudação
+  steps:
+  - intent: saudacao
+  - action: utter_saudacao
+
+- rule: Responder bom dia
+  steps:
+  - intent: saudacao_dia
+  - action: utter_saudacao_dia
+
+- rule: Responder boa tarde
+  steps:
+  - intent: saudacao_tarde
+  - action: utter_saudacao_tarde
+
+- rule: Responder boa noite
+  steps:
+  - intent: saudacao_noite
+  - action: utter_saudacao_noite
+
+# Regras de suporte técnico
+- rule: Direcionar para suporte técnico
+  steps:
+  - intent: suporte_tecnico
+  - action: utter_suporte_tecnico
+
+- rule: Direcionar para suporte técnico com triagem
+  steps:
+  - intent: suporte_tecnico_triagem
+  - action: utter_suporte_tecnico_triagem
+
+- rule: Direcionar para suporte telefonia
+  steps:
+  - intent: suporte_telefonia
+  - action: utter_suporte_telefonia
+
+- rule: Direcionar para suporte acesso ao sistema
+  steps:
+  - intent: suporte_acesso_sistema
+  - action: utter_suporte_acesso_sistema
+
+- rule: Direcionar para suporte WhatsApp
+  steps:
+  - intent: suporte_whatsapp
+  - action: utter_suporte_whatsapp
+
+- rule: Direcionar para suporte integração
+  steps:
+  - intent: suporte_integracao
+  - action: utter_suporte_integracao
+
+# Regras de vendas
+- rule: Direcionar para vendas
+  steps:
+  - intent: vendas
+  - action: utter_vendas
+
+- rule: Enviar apresentação comercial
+  steps:
+  - intent: solicitar_apresentacao
+  - action: utter_apresentacao_comercial
+
+- rule: Informar preço
+  steps:
+  - intent: perguntar_preco
+  - action: utter_informar_preco
+
+- rule: Agendar contato para vendas
+  steps:
+  - intent: pedir_contato
+  - action: utter_agendar_contato
+
+# Regras de cobranças
+- rule: Direcionar para cobranças
+  steps:
+  - intent: cobrancas
+  - action: utter_cobrancas
+
+- rule: Renegociar pagamento
+  steps:
+  - intent: renegociar
+  - action: utter_renegociacao
+
+- rule: Enviar boleto
+  steps:
+  - intent: solicitar_boleto
+  - action: utter_enviar_boleto
+
+# Regras para fallback
+- rule: Responder fallback
+  steps:
+  - intent: fallback
+  - action: utter_fallback
+
+# Regras para encerrar o atendimento
+- rule: Encerrar atendimento
+  steps:
+  - intent: goodbye
+  - action: utter_goodbye

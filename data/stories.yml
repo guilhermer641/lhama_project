@@ -1,0 +1,243 @@
+version: "3.1"
+stories:
+    
+- story: saudacao suporte
+  steps:
+    - intent: saudacao
+    - action: utter_saudacao
+    - intent: suporte
+    - action: utter_suporte_captura_nome
+    - intent: informar_nome
+    - slot_was_set:
+       - slot_nome: ""  # O slot é preenchido com o nome capturado
+    - action: utter_captura_empresa
+    - intent: informar_empresa
+    - slot_was_set:
+      - slot_empresa: ""
+    - action: utter_suporte_direcionamento
+    - action: utter_suporte_sucesso
+    
+- story: suporte
+  steps:
+    - intent: informar_empresa
+    - slot_was_set:
+      - slot_empresa: ""
+    - action: utter_suporte_direcionamento
+    - action: utter_suporte_captura_nome
+    - intent: informar_nome
+    - slot_was_set:
+       - slot_nome: ""  # O slot é preenchido com o nome capturado
+    - action: utter_suporte_direcionamento   
+    - action: utter_suporte_sucesso    
+
+- story: saudacao suporte dia
+  steps:
+    - intent: saudacao_dia
+    - action: utter_saudacao_dia
+    - intent: suporte
+    - action: utter_suporte_captura_nome
+    - intent: informar_nome
+    - slot_was_set:
+       - slot_nome: ""  # O slot é preenchido com o nome capturado
+    - action: utter_captura_empresa
+    - intent: informar_empresa
+    - slot_was_set:
+      - slot_empresa: ""
+    - action: utter_suporte_direcionamento
+    - action: utter_suporte_sucesso
+
+- story: saudacao suporte tarde
+  steps:
+    - intent: saudacao_tarde
+    - action: utter_saudacao_tarde
+    - intent: suporte
+    - action: utter_suporte_captura_nome
+    - intent: informar_nome
+    - slot_was_set:
+       - slot_nome: ""  # O slot é preenchido com o nome capturado
+    - action: utter_captura_empresa
+    - intent: informar_empresa
+    - slot_was_set:
+      - slot_empresa: ""
+    - action: utter_suporte_direcionamento
+    - action: utter_suporte_sucesso
+
+- story: saudacao suporte noite
+  steps:
+    - intent: saudacao_noite
+    - action: utter_saudacao_noite
+    - intent: suporte
+    - action: utter_suporte_captura_nome
+    - intent: informar_nome
+    - slot_was_set:
+       - slot_nome: ""  # O slot é preenchido com o nome capturado
+    - action: utter_captura_empresa
+    - intent: informar_empresa
+    - slot_was_set:
+      - slot_empresa: ""
+    - action: utter_suporte_direcionamento
+    - action: utter_suporte_sucesso
+
+- story: saudacao comercial
+  steps:
+    - intent: saudacao
+    - action: utter_saudacao
+    - intent: comercial
+    - action: utter_comercial_captura_nome
+    - intent: informar_nome
+    - slot_was_set:
+       - slot_nome: ""  # O slot é preenchido com o nome capturado
+    - action: utter_captura_empresa
+    - intent: informar_empresa
+    - slot_was_set:
+      - slot_empresa: ""
+    - action: utter_comercial_direcionamento
+    - action: utter_comercial_sucesso
+
+- story: saudacao comercial dia
+  steps:
+    - intent: saudacao_dia
+    - action: utter_saudacao_dia
+    - intent: comercial
+    - action: utter_comercial_captura_nome
+    - intent: informar_nome
+    - slot_was_set:
+       - slot_nome: ""  # O slot é preenchido com o nome capturado
+    - action: utter_captura_empresa
+    - intent: informar_empresa
+    - slot_was_set:
+      - slot_empresa: ""
+    - action: utter_comercial_direcionamento
+    - action: utter_comercial_sucesso
+
+- story: saudacao comercial tarde
+  steps:
+    - intent: saudacao_tarde
+    - action: utter_saudacao_tarde
+    - intent: comercial
+    - action: utter_comercial_captura_nome
+    - intent: informar_nome
+    - slot_was_set:
+       - slot_nome: ""  # O slot é preenchido com o nome capturado
+    - action: utter_captura_empresa
+    - intent: informar_empresa
+    - slot_was_set:
+      - slot_empresa: ""
+    - action: utter_comercial_direcionamento
+    - action: utter_comercial_sucesso
+
+- story: saudacao comercial noite
+  steps:
+    - intent: saudacao_noite
+    - action: utter_saudacao_noite
+    - intent: comercial
+    - action: utter_comercial_captura_nome
+    - intent: informar_nome
+    - slot_was_set:
+       - slot_nome: ""  # O slot é preenchido com o nome capturado
+    - action: utter_captura_empresa
+    - intent: informar_empresa
+    - slot_was_set:
+      - slot_empresa: ""
+    - action: utter_comercial_direcionamento
+    - action: utter_comercial_sucesso
+
+- story: saudacao financeiro
+  steps:
+    - intent: saudacao
+    - action: utter_saudacao
+    - intent: financeiro
+    - action: utter_financeiro_captura_nome
+    - intent: informar_nome
+    - slot_was_set:
+       - slot_nome: ""  # O slot é preenchido com o nome capturado
+    - action: utter_captura_empresa
+    - intent: informar_empresa
+    - slot_was_set:
+      - slot_empresa: ""
+    - action: utter_financeiro_direcionamento
+    - action: utter_financeiro_sucesso
+
+- story: saudacao financeiro
+  steps:
+    - intent: saudacao
+    - action: utter_saudacao
+    - intent: financeiro
+    - action: utter_financeiro_captura_nome
+    - intent: informar_nome
+    - slot_was_set:
+       - slot_nome: ""  # O slot é preenchido com o nome capturado
+    - action: utter_captura_empresa
+    - intent: informar_empresa
+    - slot_was_set:
+      - slot_empresa: ""
+    - action: utter_financeiro_direcionamento
+    - action: utter_financeiro_sucesso  
+    
+- story: saudacao financeiro dia
+  steps:
+    - intent: saudacao_dia
+    - action: utter_saudacao_dia
+    - intent: financeiro
+    - action: utter_financeiro_captura_nome
+    - intent: informar_nome
+    - slot_was_set:
+       - slot_nome: ""  # O slot é preenchido com o nome capturado
+    - action: utter_captura_empresa
+    - intent: informar_empresa
+    - slot_was_set:
+      - slot_empresa: ""
+    - action: utter_financeiro_direcionamento
+    - action: utter_financeiro_sucesso
+
+- story: saudacao financeiro tarde
+  steps:
+    - intent: saudacao_tarde
+    - action: utter_saudacao_tarde
+    - intent: financeiro
+    - action: utter_financeiro_captura_nome
+    - intent: informar_nome
+    - slot_was_set:
+       - slot_nome: ""  # O slot é preenchido com o nome capturado
+    - action: utter_captura_empresa
+    - intent: informar_empresa
+    - slot_was_set:
+      - slot_empresa: ""
+    - action: utter_financeiro_direcionamento
+    - action: utter_financeiro_sucesso
+
+- story: saudacao financeiro noite
+  steps:
+    - intent: saudacao_noite
+    - action: utter_saudacao_noite
+    - intent: financeiro
+    - action: utter_financeiro_captura_nome
+    - intent: informar_nome
+    - slot_was_set:
+       - slot_nome: ""  # O slot é preenchido com o nome capturado
+    - action: utter_captura_empresa
+    - intent: informar_empresa
+    - slot_was_set:
+      - slot_empresa: ""
+    - action: utter_financeiro_direcionamento
+    - action: utter_financeiro_sucesso  
+    
+- story: afirmação
+  steps:
+    - intent: afirmacao
+    - action: utter_afirmacao
+
+- story: negação
+  steps:
+    - intent: negacao
+    - action: utter_negacao
+
+- story: handle fallback 
+  steps:
+    - intent: nlu_fallback
+    - action: action_log_fallback
+
+- story: fallback 
+  steps:
+    - intent: fallback
+    - action: utter_fallback

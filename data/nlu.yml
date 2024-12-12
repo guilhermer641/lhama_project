@@ -1,0 +1,556 @@
+version: "3.1"
+
+nlu:
+- intent: saudacao
+  examples: |
+    - Oi
+    - Olá
+    - oi
+    - OLÁ
+    - Oiii
+    - OI
+    - Ola
+    - OLAAA
+    - E aí
+    - e aí
+    - E AÍ
+    - E ai
+    - Tudo bem?
+    - TUdo bem?
+    - TUDO BEM?
+    - Como vai?
+    - como vai
+    - COMO VAI
+    - Salve!
+    - SALVE!
+    - Fala, pessoal!
+    - Fala pessoal
+    - fala, pessoal
+    - fala pessoal
+
+- intent: saudacao_dia
+  examples: |
+    - Bom dia
+    - bom dia
+    - BOM DIA
+    - Bomm diaa
+    - Bom diia
+    - Olá, bom dia!
+    - olá, bom dia
+    - OLÁ, BOM DIA!
+    - Oi, bom dia
+    - OI, BOM DIA
+    - oi bom dia
+    - oi, bommm dia
+    - oi, bommm dia!
+
+
+- intent: saudacao_tarde
+  examples: |
+    - Boa tarde
+    - boa tarde
+    - BOA TARDE
+    - BOA TARDEE
+    - Boa tarde!
+    - Oi, boa tarde
+    - oi, boa tarde
+    - OI, BOA TARDE
+    - Olá, Boa tarde!
+    - olá, boa tarde
+    - OLÁ, BOA TARDE
+    - oii, boa tarde!
+    - boaa tarde
+    - BOAA TARDEEE
+
+
+- intent: saudacao_noite
+  examples: |
+    - Boa noite
+    - boa noite
+    - BOA NOITE
+    - BOAA NOITEE
+    - boa noitee
+    - Olá, Boa noite!
+    - olá, boa noite
+    - OLÁ, BOA NOITE
+    - Oi, boa noite
+    - oi, boa noite
+    - OI, BOA NOITE
+    - oi, boaa noite
+    - OI BOA NOITEEE
+    - booa noite
+
+- intent: informar_nome
+  examples: |
+    - Meu nome é Guilherme Rodrigues
+    - Eu sou José Roberto Lima
+    - Meu nome completo é Luciana Faria
+    - Chamo-me Lucia de Fatima dos Santos
+    - Você pode me chamar de Ana Clara
+    - Meu nome é Maria Fernanda
+    - Sou Carlos Silva
+    - Eu sou Rodrigo Matos
+    - Sou Nathalia
+    - Chamo-me Fabiano
+    - Estou falando de Zirondi
+    - Meu nome é Rafael
+    - Sou Rafaela Oshiro
+    - Meu nome é Amilcar
+    - Sou Luis
+    - Sou Luiz
+    - Meu nome é Victor
+    - Eu sou Vitor
+    - Meu nome é Ana
+    - Estou aqui como Érika
+    - Sou Patricia
+    - Meu nome é Allan
+    - Chamo-me Alan
+    - Meu nome é Wagner
+    - Sou Vagner
+    - Meu nome é Bruno
+    - Eu sou Wesley
+    - Me chamo Luciana
+    - Luciana
+    - luciana
+    - LUCIANA
+    - Me chamo GUILHERME
+    - Me chamo gui
+    - gui
+    - GUILHERME
+    - Me chamo MARIA
+    - Me chamo João
+    - joão
+    - JOÃO
+    - Me chamo PEDRO
+    - PEDRO
+    - Me chamo ana
+    - ana
+    - Carla
+    - CARLA
+    - Me chamo BRUNO
+    - BRUNO
+    - rafael
+    - RAFAEL
+    - Juliana
+    - JULIANA
+    - Me chamo FELIPE
+    - FELIPE
+    - camila
+    - CAMILA
+    - FERNANDO
+    - Larissa
+    - LUIZ
+    - Me chamo bianca
+    - bianca
+    - Bianca
+    - Roberto
+    - LETÍCIA
+    - LETICIA
+    - andré
+    - André
+    - Paula
+    - PAULA
+    - Me chamo RICARDO
+    - RICARDO
+    - aline
+    - ALINE
+    - GABRIEL
+    - sofia
+    - Sofia
+    - EDUARDO
+    - VANESSA
+    - Vanessa
+    - bruna
+    - VINICIUS
+    - Mariana
+    - LEONARDO
+    - isabela
+    - CARLOS
+    - natalia
+    - THIAGO
+    - helena
+    - RODRIGO
+    - ISADORA
+    - marcelo
+    - DEBORA
+    - henrique
+    - ALESSANDRA
+    - Me chamo diego
+    - diego
+    - Diego
+    - VIVIANE
+    - fábio
+    - Suzana
+    - RAUL
+    - laura
+    - ANTÔNIO
+    - daniela
+    - MURILO
+    - Patrícia
+    - ALEX
+    - cecília
+    - SÉRGIO
+    - Tatiane
+    - RENATO
+    - silvia
+    - ALBERTO
+    - valéria
+    - MAURÍCIO
+    - luana
+    - Francisco
+    - GABRIELA
+    - joana
+    - Renata
+    - RAFAELA
+    - mateus
+    - ADRIANA
+    - Miguel
+    - ELISA
+    - vitor
+    - MARTA
+    - gustavo
+    - Júlio
+    - DANILO
+    - eduarda
+    - CLAUDIO
+    - elaine
+    - Helder
+    - SAMANTHA
+    - Ronaldo
+    - ALEXANDRE
+    - iris
+    - PAULO
+    - Erika
+    - marcos
+    - ANA CAROLINA
+    - Rute
+    - ESTEVÃO
+    - Vladimir
+    - MANUELA
+    - marcio
+    - Talita
+    - IVAN
+    - tatiana
+    - JORGE
+    - rosana
+    - SILVIO
+    - Aline
+    - Raquel
+    - nadia
+    - EDSON
+    - João Pedro
+    - Ana Clara
+    - Maria Luiza
+    - José Carlos
+    - Carlos Eduardo
+    - Pedro Henrique
+    - Luiz Felipe
+    - Ana Paula
+    - Laura Beatriz
+    - Lucas Gabriel
+    - João Victor
+    - Maria Clara
+    - Marina Isabel
+
+- intent: informar_empresa
+  examples: |
+    - trabalho na [Acme](empresa)
+    - [Acme](empresa)
+    - acme
+    - represento a [Google](empresa)
+    - [Google](empresa)
+    - google
+    - minha empresa é a [Amazon](empresa)
+    - [Amazon](empresa)
+    - amazon
+    - sou da [Microsoft](empresa)
+    - [Microsoft](empresa)
+    - microsoft
+    - a empresa é [Facebook](empresa)
+    - [Facebook](empresa)
+    - facebook
+    - trabalho para a [Apple](empresa)
+    - [Apple](empresa)
+    - apple
+    - represento a [IBM](empresa)
+    - [IBM](empresa)
+    - ibm
+    - minha empresa é [Tesla](empresa)
+    - [Tesla](empresa)
+    - tesla
+    - sou da [Samsung](empresa)
+    - [Samsung](empresa)
+    - samsung
+    - a empresa é [Intel](empresa)
+    - [Intel](empresa)
+    - intel
+    - trabalho na [Oracle](empresa)
+    - [Oracle](empresa)
+    - oracle
+    - represento a [Siemens](empresa)
+    - [Siemens](empresa)
+    - siemens
+    - minha empresa é a [Dell](empresa)
+    - [Dell](empresa)
+    - dell
+    - sou da [HP](empresa)
+    - [HP](empresa)
+    - hp
+    - a empresa é [Adobe](empresa)
+    - [Adobe](empresa)
+    - adobe
+    - trabalho para a [Uber](empresa)
+    - [Uber](empresa)
+    - uber
+    - represento a [SpaceX](empresa)
+    - [SpaceX](empresa)
+    - spacex
+    - minha empresa é [Netflix](empresa)
+    - [Netflix](empresa)
+    - netflix
+    - sou da [Spotify](empresa)
+    - [Spotify](empresa)
+    - spotify
+    - a empresa é [Visa](empresa)
+    - [Visa](empresa)
+    - visa
+    - trabalho na [Mastercard](empresa)
+    - [Mastercard](empresa)
+    - mastercard
+    - represento a [Paypal](empresa)
+    - [Paypal](empresa)
+    - paypal
+    - minha empresa é a [Salesforce](empresa)
+    - [Salesforce](empresa)
+    - salesforce
+    - sou da [Slack](empresa)
+    - [Slack](empresa)
+    - slack
+    - a empresa é [Zoom](empresa)
+    - [Zoom](empresa)
+    - zoom
+    - trabalho para a [Nvidia](empresa)
+    - [Nvidia](empresa)
+    - nvidia
+    - represento a [AMD](empresa)
+    - [AMD](empresa)
+    - amd
+    - minha empresa é [Airbnb](empresa)
+    - [Airbnb](empresa)
+    - airbnb
+    - sou da [TikTok](empresa)
+    - [TikTok](empresa)
+    - tiktok
+    - a empresa é [Snapchat](empresa)
+    - [Snapchat](empresa)
+    - snapchat
+    - trabalho na [WeWork](empresa)
+    - [WeWork](empresa)
+    - wework
+    - represento a [Dropbox](empresa)
+    - [Dropbox](empresa)
+    - dropbox
+    - minha empresa é a [Asus](empresa)
+    - [Asus](empresa)
+    - asus
+    - sou da [Xiaomi](empresa)
+    - [Xiaomi](empresa)
+    - xiaomi
+    - a empresa é [Huawei](empresa)
+    - [Huawei](empresa)
+    - huawei
+    - trabalho para a [Sony](empresa)
+    - [Sony](empresa)
+    - sony
+    - represento a [Panasonic](empresa)
+    - [Panasonic](empresa)
+    - panasonic
+    - minha empresa é [LG](empresa)
+    - [LG](empresa)
+    - lg
+    - sou da [Vonix](empresa)
+    - [Vonix](empresa)
+    - vonix
+    - sou da [Lenovo](empresa)
+    - [Lenovo](empresa)
+    - lenovo
+    - a empresa é [Philips](empresa)
+    - [Philips](empresa)
+    - philips
+    - trabalho na [Casper](empresa)
+    - [Casper](empresa)
+    - casper
+    - represento a [Ebay](empresa)
+    - [Ebay](empresa)
+    - ebay
+    - minha empresa é a [Shopify](empresa)
+    - [Shopify](empresa)
+    - shopify
+    - sou da [Alibaba](empresa)
+    - [Alibaba](empresa)
+    - alibaba
+    - a empresa é [Tencent](empresa)
+    - [Tencent](empresa)
+    - tencent
+    - trabalho para a [Baidu](empresa)
+    - [Baidu](empresa)
+    - baidu
+    - represento a [JD.com](empresa)
+    - [JD.com](empresa)
+    - minha empresa é [Razer](empresa)
+    - [Razer](empresa)
+    - razer
+    - a empresa é [Cisco](empresa)
+    - [Cisco](empresa)
+    - cisco
+    - trabalho na [AT&T](empresa)
+    - [AT&T](empresa)
+    - at&t
+    - represento a [Verizon](empresa)
+    - [Verizon](empresa)
+    - verizon
+    - minha empresa é a [T-Mobile](empresa)
+    - [T-Mobile](empresa)
+    - t-mobile
+    - sou da [Vodafone](empresa)
+    - [Vodafone](empresa)
+    - vodafone
+    - a empresa é [Ericsson](empresa)
+    - [Ericsson](empresa)
+    - ericsson
+    - trabalho para a [Qualcomm](empresa)
+    - [Qualcomm](empresa)
+    - qualcomm
+    - represento a [Nokia](empresa)
+    - [Nokia](empresa)
+    - nokia
+    - minha empresa é [ZTE](empresa)
+    - [ZTE](empresa)
+    - zte
+    - sou da [Hitachi](empresa)
+    - [Hitachi](empresa)
+    - hitachi
+    - a empresa é [Fujitsu](empresa)
+    - [Fujitsu](empresa)
+    - fujitsu
+    - trabalho na [Sharp](empresa)
+    - [Sharp](empresa)
+    - sharp
+    - represento a [Nintendo](empresa)
+    - [Nintendo](empresa)
+    - nintendo
+    - minha empresa é a [Capcom](empresa)
+    - [Capcom](empresa)
+    - capcom
+    - sou da [Konami](empresa)
+    - [Konami](empresa)
+    - konami
+    - a empresa é [Sega](empresa)
+    - [Sega](empresa)
+    - sega
+    - trabalho para a [Square Enix](empresa)
+    - [Square Enix](empresa)
+    - square enix
+    - represento a [Bandai Namco](empresa)
+    - [Bandai Namco](empresa)
+    - bandai namco
+    - minha empresa é [Sony Pictures](empresa)
+    - [Sony Pictures](empresa)
+    - sou da [Warner Bros](empresa)
+    - [Warner Bros](empresa)
+    - a empresa é [Universal Pictures](empresa)
+    - [Universal Pictures](empresa)
+    - trabalho na [Paramount Pictures](empresa)
+    - [Paramount Pictures](empresa)
+    - represento a [Pixar](empresa)
+    - [Pixar](empresa)
+    - minha empresa é a [Disney](empresa)
+    - [Disney](empresa)
+    - sou da [HBO](empresa)
+    - [HBO](empresa)
+    - a empresa é [NBC](empresa)
+    - [NBC](empresa)
+    - trabalho para a [Fox](empresa)
+    - [Fox](empresa)
+    - represento a [CNN](empresa)
+    - [CNN](empresa)
+    - minha empresa é [BBC](empresa)
+    - [BBC](empresa)
+    - sou da [Al Jazeera](empresa)
+    - [Al Jazeera](empresa)
+    - a empresa é [Reuters](empresa)
+    - [Reuters](empresa)
+    - trabalho na [Bloomberg](empresa)
+    - [Bloomberg](empresa)
+    - represento a [Forbes](empresa)
+    - [Forbes](empresa)
+    - minha empresa é o [New York Times](empresa)
+    - sou da [The Guardian](empresa)
+    - [The Guardian](empresa)
+    - a empresa é [Washington Post](empresa)
+    - trabalho para a [Time Magazine](empresa)
+    - represento a [Financial Times](empresa)
+    - minha empresa é o [Wall Street Journal](empresa)
+    - sou da [CNN Brasil](empresa)
+    - a empresa é [Globo](empresa)
+    - trabalho na [Record](empresa)
+    - represento o [SBT](empresa)
+    - minha empresa é a [BAND](empresa)
+    - sou da [RBS](empresa)
+    - a empresa é [JBS](empresa)
+    - trabalho para a [BRF](empresa)
+    - represento a [Ambev](empresa)
+    
+- intent: suporte
+  examples: |
+    - suporte
+    - ajuda
+    - contato
+    - Preciso de ajuda com meu telefone
+    - Estou com problemas para acessar o sistema
+    - O sistema está fora do ar
+    - Algo não está funcionando
+    - Meu sistema está com erro
+    - Qualquer outra resposta que o cliente possa dar
+
+- intent: comercial
+  examples: |
+    - comercial
+    - proposta
+    - vendas
+    - vender
+
+- intent: financeiro
+  examples: |
+    - financeiro
+    - boleto
+    - fatura
+    - faturamento
+    - divida
+
+- intent: afirmacao
+  examples: |
+    - sim
+    - claro
+    - ok
+    - tudo
+    - tudo bem
+    - joia
+    - tudo jóia
+    - bem
+
+- intent: negacao
+  examples: |
+    - não
+    - não é isso
+    - não entendi
+    - ñ
+    - nao
+    - não quero
+
+- intent: fallback
+  examples: |
+    - Isso faz sentido?
+    - Não sei sobre o que falar agora
+    - ????
+    - Não sei

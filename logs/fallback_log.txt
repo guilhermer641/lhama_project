@@ -1,0 +1,206 @@
+Fallback for message: qwe, intent: nlu_fallback, confidence: 0.7
+Fallback for message: guio, intent: nlu_fallback, confidence: 0.7
+Fallback for message: wqwe, intent: nlu_fallback, confidence: 0.7
+Fallback for message: quero, intent: nlu_fallback, confidence: 0.7
+Fallback for message: ajuda, intent: nlu_fallback, confidence: 0.7
+Fallback for message: brasil, intent: nlu_fallback, confidence: 0.7
+Fallback for message: feijao, intent: nlu_fallback, confidence: 0.7
+Fallback for message: arroz, intent: nlu_fallback, confidence: 0.7
+Fallback for message: bom dia, suporte, intent: nlu_fallback, confidence: 0.7
+Fallback for message: bom dia, suporte, intent: nlu_fallback, confidence: 0.7
+Fallback for message: bom dia, suporte, intent: nlu_fallback, confidence: 0.7
+Fallback for message: bom dia, suporte, intent: nlu_fallback, confidence: 0.7
+Fallback for message: guilherme, intent: nlu_fallback, confidence: 0.7
+Fallback for message: oi, intent: nlu_fallback, confidence: 0.7
+Fallback for message: EXTERNAL: EXTERNAL_name_reminder, intent: EXTERNAL_name_reminder, confidence: None
+Fallback for message: oi, intent: saudacao, confidence: 1.0
+Fallback for message: oi, intent: saudacao, confidence: 1.0
+Fallback for message: EXTERNAL: EXTERNAL_check_for_name, intent: EXTERNAL_check_for_name, confidence: None
+Fallback for message: EXTERNAL: EXTERNAL_check_for_name, intent: EXTERNAL_check_for_name, confidence: None
+Fallback for message: EXTERNAL: EXTERNAL_check_for_name, intent: EXTERNAL_check_for_name, confidence: None
+Fallback for message: oi, intent: saudacao, confidence: 1.0
+Fallback for message: EXTERNAL: EXTERNAL_check_for_name, intent: EXTERNAL_check_for_name, confidence: None
+Fallback for message: oi, intent: saudacao, confidence: 1.0
+Fallback for message: oi, intent: saudacao, confidence: 1.0
+Fallback for message: EXTERNAL: EXTERNAL_check_for_name, intent: EXTERNAL_check_for_name, confidence: None
+Fallback for message: oi, intent: saudacao, confidence: 1.0
+Fallback for message: Oi, intent: saudacao, confidence: 1.0
+Fallback for message: Oi, intent: saudacao, confidence: 1.0
+Fallback for message: oi, intent: saudacao, confidence: 1.0
+Fallback for message: Oi, intent: saudacao, confidence: 1.0
+Fallback for message: oi, intent: saudacao, confidence: 1.0
+Fallback for message: oi, intent: saudacao, confidence: 1.0
+Fallback for message: OI, intent: saudacao, confidence: 1.0
+Fallback for message: Bom dia, intent: saudacao, confidence: 1.0
+Fallback for message: EXTERNAL: EXTERNAL_check_for_name, intent: EXTERNAL_check_for_name, confidence: None
+Fallback for message: bom dia, intent: saudacao, confidence: 1.0
+Fallback for message: bom dia, intent: saudacao, confidence: 1.0
+Fallback for message: oi, intent: saudacao, confidence: 1.0
+Fallback for message: ola, intent: saudacao, confidence: 0.9999984502792358
+Fallback for message: oi, intent: saudacao, confidence: 1.0
+Fallback for message: oi, intent: saudacao, confidence: 1.0
+Fallback for message: oi, intent: saudacao, confidence: 1.0
+Fallback for message: oi, intent: saudacao, confidence: 0.9999957084655762
+Fallback for message: guilherme, intent: nome, confidence: 0.9999988079071045
+Fallback for message: joão, intent: nome, confidence: 1.0
+Fallback for message: joão, intent: nome, confidence: 1.0
+Fallback for message: João, intent: nome, confidence: 1.0
+Fallback for message: João, intent: nome, confidence: 0.9999998807907104
+Fallback for message: meu nome é guilherme, intent: nome, confidence: 0.9999974966049194
+Fallback for message: suporte, intent: suporte_tecnico, confidence: 0.9999964237213135
+Fallback for message: ana, intent: nome, confidence: 0.9999945163726807
+Fallback for message: Meu nome é Guilherme, intent: nome, confidence: 0.9999727010726929
+Fallback for message: Meu nome é Guilherme, intent: nome, confidence: 0.9999727010726929
+Fallback for message: Guilherme, intent: nome, confidence: 0.9999406337738037
+Fallback for message: Pode me chamar de Guilherme Rodrigues, intent: nlu_fallback, confidence: 0.9
+Fallback for message: Eu sou Gerardo Rodrigues, intent: nome, confidence: 0.9364820122718811
+Fallback for message: Eu sou Gerardo, intent: nome, confidence: 0.9957883954048157
+Fallback for message: Gustavo, intent: nlu_fallback, confidence: 0.9
+Fallback for message: guga, intent: nlu_fallback, confidence: 0.9
+Fallback for message: Guilherme, intent: informar_nome, confidence: 0.9999788999557495
+Fallback for message: eu sou maria, intent: informar_nome, confidence: 0.9999994039535522
+Fallback for message: Eu sou Maria, intent: informar_nome, confidence: 0.9999997615814209
+Fallback for message: Meu nome é Mundial, intent: nlu_fallback, confidence: 0.9
+Fallback for message: iu, intent: nlu_fallback, confidence: 0.9
+Fallback for message: Pode me chamar de Ana, intent: informar_nome, confidence: 0.9999979734420776
+Fallback for message: meu nome é diego, intent: nlu_fallback, confidence: 0.9
+Fallback for message: Meu nome é henrique, intent: nlu_fallback, confidence: 0.9
+Fallback for message: Aba System, intent: nlu_fallback, confidence: 0.9
+Fallback for message: Herts, intent: nlu_fallback, confidence: 0.9
+Fallback for message: Brascam, intent: nlu_fallback, confidence: 0.9
+Fallback for message: Br, intent: nlu_fallback, confidence: 0.9
+Fallback for message: Roberto, intent: nlu_fallback, confidence: 0.9
+Fallback for message: acme, intent: captura_empresa, confidence: 0.9990118741989136
+Fallback for message: acme, intent: captura_empresa, confidence: 0.9990118741989136
+Fallback for message: aced, intent: nlu_fallback, confidence: 0.9
+Fallback for message: falo da acme, intent: captura_empresa, confidence: 0.9990218877792358
+Fallback for message: sou da empresa acme, intent: captura_empresa, confidence: 0.9991982579231262
+Fallback for message: Luciana Faria, intent: nlu_fallback, confidence: 0.9
+Fallback for message: Lucia de Fatima dos Santos, intent: nlu_fallback, confidence: 0.9
+Fallback for message: Embalagens Plasticas LTDA, intent: nlu_fallback, confidence: 0.9
+Fallback for message: EP LTDA, intent: nlu_fallback, confidence: 0.9
+Fallback for message: Coca Cola LTDA, intent: nlu_fallback, confidence: 0.9
+Fallback for message: Vonix Tecnologia LTDA, intent: nlu_fallback, confidence: 0.9
+Fallback for message: Restaurante 1,99, intent: nlu_fallback, confidence: 0.9
+Fallback for message: Padaria do Seu Zé, intent: nlu_fallback, confidence: 0.9
+Fallback for message: Pet Shop Miau Au, intent: nlu_fallback, confidence: 0.9
+Fallback for message: Cosméticos Pharma Sol, intent: nlu_fallback, confidence: 0.9
+Fallback for message: Dominos Pizza, intent: nlu_fallback, confidence: 0.9
+Fallback for message: Comando Telecom, intent: nlu_fallback, confidence: 0.9
+Fallback for message: pepsi, intent: nlu_fallback, confidence: 0.9
+Fallback for message: pepsi-cola, intent: captura_empresa, confidence: 0.9989846348762512
+Fallback for message: beatriz conceicao, intent: nlu_fallback, confidence: 0.9
+Fallback for message: batriz, intent: nlu_fallback, confidence: 0.9
+Fallback for message: Eu falo da empresa Cultura Inglesa, intent: captura_empresa, confidence: 0.9999984502792358
+Fallback for message: Tesla, intent: nlu_fallback, confidence: 0.9
+Fallback for message: taxi, intent: nlu_fallback, confidence: 0.9
+Fallback for message: gagdkjsdagjsfhksa, intent: nlu_fallback, confidence: 0.9
+Fallback for message: nao, intent: nlu_fallback, confidence: 0.9
+Fallback for message: gisele, intent: nlu_fallback, confidence: 0.9
+Fallback for message: biana, intent: nlu_fallback, confidence: 0.9
+Fallback for message: bianca, intent: nlu_fallback, confidence: 0.9
+Fallback for message: vonix, intent: nlu_fallback, confidence: 0.9
+Fallback for message: eu quero ajuda com o uso do novo programa, intent: nlu_fallback, confidence: 0.9
+Fallback for message: sim, estou com um defeito no sistema, intent: nlu_fallback, confidence: 0.9
+Fallback for message: comercial, intent: nlu_fallback, confidence: 0.9
+Fallback for message: comercial, intent: nlu_fallback, confidence: 0.9
+Fallback for message: oikkj, intent: nlu_fallback, confidence: 0.9
+Fallback for message: nsnus, intent: nlu_fallback, confidence: 0.9
+Fallback for message: cellvix, intent: captura_empresa, confidence: 0.9999768733978271
+Fallback for message: gui, intent: nlu_fallback, confidence: 0.9
+Fallback for message: guilherem, intent: nlu_fallback, confidence: 0.9
+Fallback for message: cellvix, intent: captura_empresa, confidence: 0.9999195337295532
+Fallback for message: ASG Corporation, intent: nlu_fallback, confidence: 0.9
+Fallback for message: meu sistema parou de funcionar, intent: nlu_fallback, confidence: 0.9
+Fallback for message: Preciso de ajuda com meu telefone, intent: informacao_suporte, confidence: 0.9960286617279053
+Fallback for message: Guilherme, intent: captura_nome, confidence: 0.9999449253082275
+Fallback for message: Guilherme, intent: captura_nome, confidence: 0.9999449253082275
+Fallback for message: ana, intent: captura_nome, confidence: 0.9620432257652283
+Fallback for message: Luis, intent: captura_nome, confidence: 0.9999663829803467
+Fallback for message: Sou Luis, intent: captura_nome, confidence: 0.9999990463256836
+Fallback for message: Guilherme, intent: captura_nome, confidence: 0.9985125660896301
+Fallback for message: Guilherme, intent: captura_nome, confidence: 0.9985125660896301
+Fallback for message: Luis, intent: captura_nome, confidence: 0.9989375472068787
+Fallback for message: Luis, intent: captura_nome, confidence: 0.9989375472068787
+Fallback for message: Guilherme, intent: captura_nome, confidence: 0.9985125660896301
+Fallback for message: Guilherme, intent: captura_nome, confidence: 0.9985125660896301
+Fallback for message: Ana, intent: captura_nome, confidence: 0.6454213261604309
+Fallback for message: oi, intent: nlu_fallback, confidence: 10.0
+Fallback for message: oi, intent: nlu_fallback, confidence: 10.0
+Fallback for message: oi, intent: nlu_fallback, confidence: 10.0
+Fallback for message: oi, intent: nlu_fallback, confidence: 10.0
+Fallback for message: estou com um problema assim e aquilo, intent: informacao_suporte, confidence: 0.9061192274093628
+Fallback for message: O sistema está fora do ar, intent: informacao_suporte, confidence: 0.9986144304275513
+Fallback for message: guilherme, intent: captura_nome, confidence: 0.9999998807907104
+Fallback for message: guilherme, intent: captura_nome, confidence: 0.9999998807907104
+Fallback for message: ana, intent: captura_nome, confidence: 0.9951725602149963
+Fallback for message: guilherme, intent: captura_nome, confidence: 0.9999998807907104
+Fallback for message: guilherme, intent: captura_nome, confidence: 0.9999998807907104
+Fallback for message: gui, intent: captura_nome, confidence: 0.9999995231628418
+Fallback for message: gui, intent: captura_nome, confidence: 0.9999995231628418
+Fallback for message: gui, intent: captura_nome, confidence: 0.9999995231628418
+Fallback for message: gui, intent: captura_nome, confidence: 0.9999995231628418
+Fallback for message: gui, intent: captura_nome, confidence: 0.9999995231628418
+Fallback for message: gui, intent: captura_nome, confidence: 0.9999995231628418
+Fallback for message: Afonso, intent: nlu_fallback, confidence: 0.6
+Fallback for message: acme, intent: captura_empresa, confidence: 0.9999591112136841
+Fallback for message: luciana, intent: informar_nome, confidence: 1.0
+Fallback for message: Luciana, intent: informar_nome, confidence: 1.0
+Fallback for message: Acme, intent: captura_empresa, confidence: 0.9999651908874512
+Fallback for message: acme, intent: captura_empresa, confidence: 0.9999591112136841
+Fallback for message: Luciana, intent: informar_nome, confidence: 1.0
+Fallback for message: luciana, intent: informar_nome, confidence: 1.0
+Fallback for message: Cellvix, intent: captura_empresa, confidence: 0.9997897744178772
+Fallback for message: , intent: nlu_fallback, confidence: 0.6
+Fallback for message: , intent: nlu_fallback, confidence: 0.6
+Fallback for message: , intent: nlu_fallback, confidence: 0.6
+Fallback for message: guilherme, intent: informar_nome, confidence: 1.0
+Fallback for message: guilherme, intent: informar_nome, confidence: 1.0
+Fallback for message: Cellvix, intent: captura_empresa, confidence: 0.9997897744178772
+Fallback for message: oi, intent: informacao_suporte, confidence: 0.677094578742981
+Fallback for message: oi, intent: informacao_suporte, confidence: 0.677094578742981
+Fallback for message: Quero um help e que possam me direcionar, intent: informacao_suporte, confidence: 0.9885061979293823
+Fallback for message: irão me direcionar?, intent: nlu_fallback, confidence: 0.3
+Fallback for message: Acme, intent: captura_empresa, confidence: 0.9999651908874512
+Fallback for message: ana, intent: informar_nome, confidence: 1.0
+Fallback for message: Acme, intent: captura_empresa, confidence: 0.9999945163726807
+Fallback for message: luciana, intent: informar_nome, confidence: 1.0
+Fallback for message: Acme, intent: informar_nome, confidence: 0.9998528957366943
+Fallback for message: empresa Lorena, intent: informar_empresa, confidence: 1.0
+Fallback for message: Acme, intent: informar_empresa, confidence: 1.0
+Fallback for message: Acme, intent: informar_empresa, confidence: 1.0
+Fallback for message: Acme, intent: informar_empresa, confidence: 1.0
+Fallback for message: Acme, intent: informar_empresa, confidence: 1.0
+Fallback for message: acme, intent: informar_empresa, confidence: 1.0
+Fallback for message: acme, intent: informar_empresa, confidence: 1.0
+Fallback for message: vonix, intent: informar_empresa, confidence: 1.0
+Fallback for message: acme, intent: informar_empresa, confidence: 1.0
+Fallback for message: spotify, intent: informar_empresa, confidence: 1.0
+Fallback for message: Acme, intent: informar_empresa, confidence: 1.0
+Fallback for message: Acme, intent: informar_empresa, confidence: 1.0
+Fallback for message: Acme, intent: informar_empresa, confidence: 1.0
+Fallback for message: Acme, intent: informar_empresa, confidence: 1.0
+Fallback for message: Vonix, intent: informar_empresa, confidence: 1.0
+Fallback for message: Vonix, intent: informar_empresa, confidence: 1.0
+Fallback for message: Vonix, intent: informar_empresa, confidence: 1.0
+Fallback for message: Vonix, intent: informar_empresa, confidence: 1.0
+Fallback for message: Spotify, intent: informar_empresa, confidence: 1.0
+Fallback for message: Reeve, intent: informar_empresa, confidence: 0.8646073341369629
+Fallback for message: Falo da empresa Reeve, intent: informar_empresa, confidence: 1.0
+Fallback for message: Cellvix, intent: informar_empresa, confidence: 1.0
+Fallback for message: acme, intent: informar_empresa, confidence: 1.0
+Fallback for message: Cellvix, intent: informar_empresa, confidence: 1.0
+Fallback for message: Cellvix, intent: informar_empresa, confidence: 1.0
+Fallback for message: vonix, intent: informar_empresa, confidence: 1.0
+Fallback for message: Vonix, intent: informar_empresa, confidence: 1.0
+Fallback for message: vonix, intent: informar_empresa, confidence: 1.0
+Fallback for message: VONIX, intent: informar_empresa, confidence: 1.0
+Fallback for message: Acme, intent: informar_empresa, confidence: 1.0
+Fallback for message: minha emporesa é Tesla, intent: informar_empresa, confidence: 1.0
+Fallback for message: Vonix, intent: informar_empresa, confidence: 1.0
+Fallback for message: cellvix, intent: informar_empresa, confidence: 1.0
+Fallback for message: acme, intent: informar_empresa, confidence: 1.0
+Fallback for message: cellvix, intent: informar_empresa, confidence: 1.0
+Fallback for message: cellvix, intent: informar_empresa, confidence: 1.0
+Fallback for message: ibm, intent: informar_empresa, confidence: 1.0
+Fallback for message: ibm, intent: informar_empresa, confidence: 1.0
